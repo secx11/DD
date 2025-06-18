@@ -1,6 +1,31 @@
 const websites = {
 "1":"https://maps.app.goo.gl/KiKgAYwhPcow5itx7",
 "2":"https://maps.app.goo.gl/i95w4BcthGLmZBpLA",
+"84192":"https://maps.app.goo.gl/mubEeJ7QhaCUEiX19?g_st=ic",
+"84223":"https://maps.app.goo.gl/skp3tM2E1eDckB6p6?g_st=ic",
+"84224":"https://maps.app.goo.gl/zQshJBTWaVuDczUx7?g_st=ic",
+"AP10-70-2A":"https://maps.app.goo.gl/Hy89pKvhQXFW2kAe6?g_st=ic",
+"Ap6-131":"https://maps.app.goo.gl/QjaTzAzuYEnJyTqv7?g_st=iw",
+"75611":"https://maps.google.com?q=26.4656070,43.6506730&entry=gps&lucs=,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_st=com.google.maps.preview.copy",
+"75614":"https://maps.google.com?q=26.4665278,43.6503056&entry=gps&lucs=,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_st=com.google.maps.preview.copy",
+"75613":"https://maps.app.goo.gl/VJLEV6L2iX36kiz89?g_st=com.google.maps.preview.copy",
+"75612":"https://maps.google.com?q=26.4658680,43.6502190&entry=gps&lucs=,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_st=com.google.maps.preview.copy",
+"75615":"https://maps.app.goo.gl/2AxEC5Wusgt9J42k7?g_st=com.google.maps.preview.copy",
+"75606":"https://maps.app.goo.gl/W7BRZEwH59W7yh8Z8?g_st=com.google.maps.preview.copy",
+"75502":"https://maps.app.goo.gl/wUwXHDuM5xQouSXCA?g_st=com.google.maps.preview.copy",
+"75603":"https://maps.app.goo.gl/CZr3ivaLqaGcGhfd6?g_st=com.google.maps.preview.copy",
+"75604":"https://maps.app.goo.gl/dzXM9yEnDLi2ZKK96?g_st=com.google.maps.preview.copy",
+"75605":"https://maps.app.goo.gl/NryTNZ9sSyoXv1sF7?g_st=com.google.maps.preview.copy",
+"66356":"https://maps.app.goo.gl/WJVZV4pzPYApkLEA9?g_st=com.google.maps.preview.copy",
+"AF4/7-100":"https://maps.app.goo.gl/Y44oQqLw8RELPULh7?g_st=iw",
+"AF4-100":"https://maps.app.goo.gl/Y44oQqLw8RELPULh7?g_st=iw",
+"84233":"https://maps.app.goo.gl/VHBm6ochzN1uuHRw5?g_st=com.google.maps.preview.copy",
+"84232":"https://maps.app.goo.gl/qqbq3ZXtdA8jfYHbA?g_st=com.google.maps.preview.copy",
+"83888":"https://maps.app.goo.gl/v6HjavU6zNmycdyu8?g_st=com.google.maps.preview.copy",
+"79191":"https://maps.app.goo.gl/seKMPnv3ehb9Tb3j8?g_st=com.google.maps.preview.copy",
+"AF7-349-951A-4":"https://goo.gl/maps/N3jWU6qnJd7DHFMR7",
+"AF7-340-1045A-18-21":"https://goo.gl/maps/My6pE1E14H1Ssf8c9",
+"AF7-349-1051A":"https://goo.gl/maps/zwLpZwSS8tXdTnYP8",
 "AF3-29-66A-2":"https://maps.app.goo.gl/b7X5mwkmMpF3XF2v6?g_st=iw",
 "AW12-82":"https://maps.app.goo.gl/B8mmStcmjNjGUvz6A?g_st=com.google.maps.preview.copy",
 "AF10-840-2":"https://maps.app.goo.gl/fn52CQQ2TMj7LYkG9?g_st=com.google.maps.preview.copy",
@@ -1527,7 +1552,7 @@ const websites = {
 "60268":"https://www.google.com/maps?q=26.3386774671455,43.970899553947&shorturl=1",
 "60270":"http://maps.google.com/maps?q=26.36036821+43.95193983+",
 "60272":"http://maps.google.com/maps?q=26.27532008+43.97293991+",
-"60273":"http://maps.google.com/maps?q=26.37386566+43.96380686+",
+"60273":"http://maps.app.goo.gl/m654FN7zpsXoPvhr9?g_st=com.google.maps.preview.copy",
 "60275":"http://maps.google.com/maps?q=26.384203+43.98211514+",
 "60276":"http://maps.google.com/maps?q=26.38815249+43.97551856+",
 "60277":"http://maps.google.com/maps?q=26.36013712+43.97814662+",
@@ -11773,7 +11798,8 @@ const websites = {
 "AP6-344-49-3":"https://maps.app.goo.gl/cSi9DomYEFmThKfW8?g_st=com.google.maps.preview.copy",
 "AP6-347-26":"https://maps.app.goo.gl/EJ6ks2LgSPc5rM3x5?g_st=com.google.maps.preview.copy",
 "AP6-358A":"https://www.google.com/maps?q=43.619132 ,26.392824",
-"AP9-140A":"https://www.google.com/maps?q=43.756714 ,26.396075",
+"AP9-140A":"https://maps.app.goo.gl/htyfmxpWksxFVSni6?g_st=iw",
+"AP9-140B":"https://maps.app.goo.gl/htyfmxpWksxFVSni6?g_st=iw",
 "AP9-335A":"https://maps.app.goo.gl/YQiHZ3e7s5BgiHoAA?g_st=com.google.maps.preview.copy",
 "AP9-336A":"https://maps.app.goo.gl/Np4yThbGqvosfqK77?g_st=com.google.maps.preview.copy",
 "AW1":"https://maps.app.goo.gl/UssfeN8jvfLy3igHA?g_st=com.google.maps.preview.copy",
@@ -12114,7 +12140,6 @@ const websites = {
 "UJ8-2":"https://maps.app.goo.gl/BQeEwSCzziU3e1ww9?g_st=com.google.maps.preview.copy",
 
   };
-
 // عناصر DOM
 const searchInput = document.getElementById("searchInput");
 const resultsContainer = document.getElementById("resultsContainer");
@@ -12203,9 +12228,68 @@ function searchWebsite() {
     performSearch(searchInput.value.trim());
     suggestionsContainer.style.display = "none";
 }
+function performSearch(searchTerm) {
+  resultsContainer.innerHTML = "<p>جارٍ البحث...</p>";
+  // باقي الكود...
+}
+if (foundKey) {
+  const iframe = document.createElement("iframe");
+  iframe.src = websites[foundKey];
+  iframe.width = "100%";
+  iframe.height = "400";
+  iframe.style.border = "none";
+  resultsContainer.appendChild(iframe);
+}
+function showSuggestions(searchTerm) {
+  suggestionsContainer.innerHTML = "";
+  suggestionsContainer.style.display = "none";
 
-// يمكنك إضافة تفاعلات إضافية هنا
-document.querySelector('.sec-logo-link').addEventListener('click', function() {
-    console.log('تم النقر على شعار SEC');
-    // يمكنك إضافة أكواد إضافية هنا
-});
+  if (!searchTerm) {
+    return;
+  }
+
+  // البحث عن المفاتيح المطابقة
+  const matchingKeys = Object.keys(websites).filter(key =>
+    key.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // عرض 5 اقتراحات كحد أقصى
+  const limitedKeys = matchingKeys.slice(0, 5);
+
+  if (limitedKeys.length > 0) {
+240    limitedKeys.forEach(key => {
+      const suggestionItem = document.createElement("div");
+      suggestionItem.textContent = key;
+      suggestionItem.className = "suggestion-item";
+      suggestionItem.addEventListener("click", () => {
+        searchInput.value = key;
+        performSearch(key);
+        suggestionsContainer.style.display = "none";
+      });
+      suggestionsContainer.appendChild(suggestionItem);
+    });
+    suggestionsContainer.style.display = "block";
+  }
+}
+if (matchingKeys.length > limitedKeys.length) {
+  const moreButton = document.createElement("div");
+  moreButton.textContent = "إظهار المزيد";
+  moreButton.className = "suggestion-item more-button";
+  moreButton.addEventListener("click", () => {
+    // عرض جميع الاقتراحات
+    suggestionsContainer.innerHTML = "";
+    matchingKeys.forEach(key => {
+      const suggestionItem = document.createElement("div");
+      suggestionItem.textContent = key;
+      suggestionItem.className = "suggestion-item";
+      suggestionItem.addEventListener("click", () => {
+        searchInput.value = key;
+        performSearch(key);
+        suggestionsContainer.style.display = "none";
+      });
+      suggestionsContainer.appendChild(suggestionItem);
+    });
+    suggestionsContainer.style.display = "block";
+  });
+  suggestionsContainer.appendChild(moreButton);
+}

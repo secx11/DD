@@ -2,55 +2,68 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>الجديد</title>
+  <title>Untitled</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نظام إدارة المعدات | كهرباء القصيم</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- meta: ترميز النصوص لدعم العربية -->
+  <meta charset="UTF-8">
+  <!-- meta: توافق الأجهزة -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta: وصف الصفحة لمحركات البحث -->
+  <meta name="description" content="صفحة بحث عن مواقع باستخدام خرائط Google">
+  <!-- title: عنوان الصفحة -->
+  <title>صفحة البحث المميزة</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google tag (gtag.js) -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-FCJQ9RJQ0V"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FCJQ9RJQ0V');
+</script>
+  <style>
+  </style>
 </head>
 <body>
-  <div class="full-page-bg"></div>
-        <header>
-            <div class="header-content">
-                <div class="logo-container">
-                    <img src="https://www2.0zz0.com/2025/04/09/19/540933648.png" alt="شعار الشركة السعودية للكهرباء" class="logo">
-                    <div class="titles">
-                        <h1>مواقع المعدات الكهربائية</h1>
-                        
-                    </div>
-                </div>
-            </div>
-        </header>
-        
-        <main>
-            <section class="search-section">
-                <h2>البحث عن مواقع المعدات</h2>
-                <p class="search-description">يمكنك البحث عن المعدات بالاسم أو الرقم التسلسلي أو الموقع</p>
-                
-                <div class="search-container">
-    <input type="text" placeholder="اكتب كلمة البحث هنا..." class="search-input">
-    <button class="search-btn">بحث</button>
-</div>
-            </section>
-        </main>
-        
-        <footer class="fixed-footer">
-            <div class="footer-content">
-                <p>المملكة العربية السعودية © الشركة السعودية للكهرباء</p>
-                <p>دائرة دعم العمليات والصيانة © قسم التشغيل</p>
-            </div>
-        </footer>
+  <!-- الهيدر -->
+  <header>
+    <div class="logo">
+      <img src="https://www2.0zz0.com/2025/04/09/19/540933648.png" alt="شعار">
     </div>
+    <div class="nav-links">
+      <a href="#">الرئيسية</a>
+      <a href="#">حول</a>
+      <a href="#">اتصل بنا</a>
+    </div>
+  </header>
 
-    <script src="script.js"></script>
+  <!-- قسم البحث -->
+  <section class="container">
+    <h1>ابحث عن موقعك المفضل</h1>
+    <div class="search-box">
+       <input type="text" id="searchInput" placeholder="أدخل اسم الموقع..." aria-label="حقل بحث المواقع">
+          <div id="suggestions" class="suggestions"></div> <!-- قائمة الاقتراحات -->
+          <button onclick="searchWebsite()">ابحث</button>
+      <div id="resultsContainer"></div>
+    </div>
+   </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>تصميم وتطوير© فهد الفهيد| 2025</p>
+  </footer>
+
+  <!-- JavaScript لمقترحات البحث -->
+  <script src="script.js"></script>
 </body>
 </html>
 <!-- partial -->
