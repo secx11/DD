@@ -1,149 +1,147 @@
 /* إعادة تعيين القيم الافتراضية */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* الألوان الأساسية */
 :root {
-    --primary: #003366;
-    --secondary: #CC7722;
-}
-    /* تنسيق الخلفية */
-    body {
-      background-image: url('https://www2.0zz0.com/2025/04/10/14/831748902.jpeg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed; /* الخلفية ثابتة عند التمرير */
-      font-family: Arial, sans-serif;
-      direction: rtl; /* من اليمين لليسار */
-      color: #333;
-    }
-
-    /* تنسيق الهيدر */
-    header {
-      background-color: rgba(0, 0, 0, 0.7); /* خلفية شبه شفافة */
-      padding: 15px 30px;
-      display: flex; /* Flexbox للترتيب */
-      justify-content: space-between;
-      align-items: center;
-      position: sticky; /* يبقى في الأعلى عند التمرير */
-      top: 0;
-      z-index: 100;
-    }
-
-    /* تنسيق الشعار */
-    .logo img {
-      height: 60px; /* حجم الشعار */
-    }
-
-    /* تنسيق روابط التنقل */
-    .nav-links {
-      display: flex;
-      gap: 20px;
-    }
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    .nav-links a:hover {
-      color: #3498db;
-    }
-
-    /* تنسيق قسم البحث */
-    section.container {
-      width: 90%;
-      max-width: 700px;
-      margin: 50px auto; /* توسيط القسم */
-      padding: 30px;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    /* تنسيق عنوان القسم */
-    section.container h1 {
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: #2c3e50;
-    }
-
-    /* تنسيق حقل البحث */
-    .search-box {
-      display: flex;
-      gap: 10px;
-      width: 100%;
-      max-width: 500px;
-      
-    }
-    .search-box input {
-      flex: 1; /* يأخذ المساحة المتاحة */
-      padding: 12px;
-      border: 1px solid #ccc;
-      padding: 15px 25px;
-    border: 2px solid var(--primary);
-    border-radius: 30px;
-    font-size: 1rem;
-    background: rgba(255,255,255,0.7);
-    outline: none;
-    transition: all 0.3s;
-    margin-bottom: 15px;
-    }
-    button {
-      padding: 12px 20px;
-      background : linear-gradient(to right, var(--primary), var(--secondary));
-      color: white;
-      border: none;
-      border-radius: 30px;
-      margin-right: 10px;
-      cursor: pointer;
-    transition: all 0.3s;
-    display: block;
-    margin: 0 auto;
-    }
-    button:hover {
-      opacity: 0.9;
-    transform: translateY(-2px);
-    }
-button:focus, .nav-links a:focus {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
+  --primary: #003366;
+  --secondary: #CC7722;
 }
 
-    /* تنسيق قائمة المقترحات */
-    .suggestions {
+/* تنسيق الخلفية */
+body {
+  background-image: url('https://www2.0zz0.com/2025/04/10/14/831748902.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #f0f0f0; /* لون احتياطي */
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  color: #333;
+}
+
+/* تنسيق الهيدر */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* تنسيق الشعار */
+.logo img {
+  height: 60px;
+}
+
+/* تنسيق روابط التنقل */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-links a:hover {
+  color: #3498db;
+}
+
+/* تنسيق قسم البحث */
+section.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* تنسيق عنوان القسم */
+section.container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* تنسيق حقل البحث والزر */
+.search-box {
+  display: flex;
+  flex-direction: row; /* حقل البحث والزر بجانب بعضهما */
+  gap: 10px;
   width: 100%;
   max-width: 500px;
-  margin-top: 2px;
+  position: relative; /* لتحديد موقع القائمة */
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  outline: none;
+  transition: all 0.3s;
+}
+
+button {
+  padding: 12px 20px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* تنسيق قائمة الاقتراحات */
+.suggestions {
+  position: absolute;
+  top: 100%; /* أسفل حقل البحث */
+  right: 0; /* محاذاة مع الجانب الأيمن لحقل البحث */
+  width: calc(100% - 90px); /* عرض الحقل مطروحًا عرض الزر تقريبًا */
+  margin-top: 2px; /* مسافة صغيرة جدًا */
   border: 2px solid var(--primary);
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: none;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 5px 0; /* حشوة داخلية للاقتراحات */
 }
-    .suggestions.active {
-      display: block; /* تظهر عند الكتابة */
-    }
-    .suggestions .suggestion-item {
-  padding: 6px;
-  border-radius: 25px;
+
+.suggestions.active {
+  display: block !important;
+}
+
+.suggestions .suggestion-item {
+  padding: 6px 12px; /* حشوة متناسقة */
   cursor: pointer;
+  font-size: 1rem;
 }
+
 .suggestions .suggestion-item:hover {
   background-color: rgba(227, 132, 38, 0.46);
 }
-    /* تنسيق الفوتر */
-    footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  text-align: center;
-  padding: 15px;
-  position: fixed; /* تصحيح الحرف */
-  bottom: 0;
-  width: 100%;
-}
+
+/* تنسيق النتائج */
 .result-link {
   display: inline-block;
   padding: 10px 20px;
@@ -161,6 +159,19 @@ button:focus, .nav-links a:focus {
   color: #d63031;
   margin-top: 10px;
 }
+
+/* تنسيق الفوتر */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* استجابة للشاشات الصغيرة */
 @media (max-width: 600px) {
   .nav-links {
     gap: 10px;
@@ -171,8 +182,6 @@ button:focus, .nav-links a:focus {
   .logo img {
     height: 40px;
   }
-}
-@media (max-width: 600px) {
   .search-box input {
     padding: 10px;
     font-size: 14px;
@@ -181,27 +190,7 @@ button:focus, .nav-links a:focus {
     padding: 10px 15px;
     font-size: 14px;
   }
-}
-body {
-  background-image: url('background.webp');
-  /* باقي التنسيقات */
-}
-body {
-  background-image: url('https://www2.0zz0.com/2025/04/10/14/831748902.jpeg');
-  background-color: #f0f0f0; /* لون احتياطي */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: Arial, sans-serif;
-  direction: rtl;
-  color: #333;
-}
-.more-button {
-  text-align: center;
-  font-weight: bold;
-  color: var(--primary);
-  padding: 10px;
-}
-.more-button:hover {
-  background-color: rgba(227, 132, 38, 0.46);
+  .suggestions {
+    width: calc(100% - 70px); /* تعديل العرض للشاشات الصغيرة */
+  }
 }
