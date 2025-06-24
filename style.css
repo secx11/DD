@@ -43,15 +43,27 @@ header {
 /* تنسيق روابط التنقل */
 .nav-links {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  min-width: 200px;
+  padding-left: 20px;
 }
+
 .nav-links a {
-  color: white;
+  color: white !important;
   text-decoration: none;
   font-size: 16px;
+  padding: 5px 10px;
+  text-align: center;
+  width: 100%;
+  transition: color 0.3s;
 }
-.nav-links a:hover {
-  color: #3498db;
+
+.nav-links a:hover,
+.nav-links a:visited,
+.nav-links a:active {
+  color: white !important;
 }
 
 /* تنسيق قسم البحث */
@@ -73,18 +85,19 @@ section.container h1 {
   color: #2c3e50;
 }
 
-/* تنسيق حقل البحث والزر */
+/* تنسيق حقل البحث ونتائج البحث */
 .search-box {
-  display: flex;
-  flex-direction: row; /* حقل البحث والزر بجانب بعضهما */
-  gap: 10px;
   width: 100%;
   max-width: 500px;
-  position: relative; /* لتحديد موقع القائمة */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
 }
 
 .search-box input {
-  flex: 1;
+  flex: 1; /* يأخذ المساحة المتبقية */
   padding: 12px;
   border: 2px solid var(--primary);
   border-radius: 30px;
@@ -94,51 +107,9 @@ section.container h1 {
   transition: all 0.3s;
 }
 
-button {
-  padding: 12px 20px;
-  background: linear-gradient(to right, var(--primary), var(--secondary));
-  color: white;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-button:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-}
-
-/* تنسيق قائمة الاقتراحات */
-.suggestions {
-  position: absolute;
-  top: 100%; /* أسفل حقل البحث */
-  right: 0; /* محاذاة مع الجانب الأيمن لحقل البحث */
-  width: calc(100% - 90px); /* عرض الحقل مطروحًا عرض الزر تقريبًا */
-  margin-top: 2px; /* مسافة صغيرة جدًا */
-  border: 2px solid var(--primary);
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: none;
-  max-height: 150px;
-  overflow-y: auto;
-  z-index: 10;
-  padding: 5px 0; /* حشوة داخلية للاقتراحات */
-}
-
-.suggestions.active {
-  display: block !important;
-}
-
-.suggestions .suggestion-item {
-  padding: 6px 12px; /* حشوة متناسقة */
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.suggestions .suggestion-item:hover {
-  background-color: rgba(227, 132, 38, 0.46);
+#resultsContainer {
+  display: flex;
+  align-items: center;
 }
 
 /* تنسيق النتائج */
@@ -149,15 +120,50 @@ button:hover {
   color: white;
   text-decoration: none;
   border-radius: 30px;
-  margin-top: 10px;
+  font-size: 1rem;
+  transition: all 0.3s;
 }
+
 .result-link:hover {
   opacity: 0.9;
   transform: translateY(-2px);
 }
+
+/* تنسيق قائمة الاقتراحات */
+.suggestions {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: calc(100% - 150px); /* عرض حقل البحث مطروحًا عرض الرابط */
+  margin-top: 2px;
+  border: 2px solid var(--primary);
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 5px 0;
+}
+
+.suggestions.active {
+  display: block !important;
+}
+
+.suggestions .suggestion-item {
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.suggestions .suggestion-item:hover {
+  background-color: rgba(227, 132, 38, 0.46);
+}
+
 .error-message {
   color: #d63031;
-  margin-top: 10px;
+  font-size: 1rem;
 }
 
 /* تنسيق الفوتر */
@@ -173,24 +179,40 @@ footer {
 
 /* استجابة للشاشات الصغيرة */
 @media (max-width: 600px) {
-  .nav-links {
-    gap: 10px;
-  }
-  .nav-links a {
-    font-size: 14px;
+  header {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px 20px;
   }
   .logo img {
     height: 40px;
+  }
+  .nav-links {
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    min-width: 150px;
+  }
+  .nav-links a {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+  .search-box {
+    flex-direction: column; /* رأسي على الشاشات الصغيرة */
+    align-items: stretch;
   }
   .search-box input {
     padding: 10px;
     font-size: 14px;
   }
-  button {
-    padding: 10px 15px;
-    font-size: 14px;
+  #resultsContainer {
+    margin-top: 10px;
+  }
+  .result-link {
+    padding: 8px 15px;
+    font-size: 0.9rem;
   }
   .suggestions {
-    width: calc(100% - 70px); /* تعديل العرض للشاشات الصغيرة */
+    width: 100%; /* عرض كامل على الشاشات الصغيرة */
   }
 }
