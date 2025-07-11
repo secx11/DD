@@ -230,7 +230,7 @@ if (submitFeedback) {
       })
       .catch(error => {
         console.error("Error:", error);
-        feedbackMsg.textContent = "حدث خطأ أثناء الإرسال. تأكد من إعدادات النموذج وحاول مرة أخرى.";
+        feedbackMsg.textContent = "";
         feedbackMsg.className = "error";
       });
 
