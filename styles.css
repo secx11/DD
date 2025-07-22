@@ -75,7 +75,6 @@ header {
   padding: 5px 18px;
 }
 
-/* Ø²Ø± Ø§Ù„Ù…Ù„Ø§Ø­Ø¸Ø§Øª */
 .feedback-btn {
   margin-top: 25px;
   padding: 10px 25px;
@@ -92,7 +91,6 @@ header {
   transform: translateY(-2px);
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ø§Ù„Ù…Ù‚Ø¯Ù…Ø© */
 .intro {
   width: 100%;
   max-width: 600px;
@@ -105,7 +103,6 @@ header {
   color: #2c3e50;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ù‚Ø³Ù… Ø§Ù„Ø¨Ø­Ø« */
 section.container {
   width: 90%;
   max-width: 700px;
@@ -117,14 +114,12 @@ section.container {
   align-items: center;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ø¹Ù†ÙˆØ§Ù† Ø§Ù„Ù‚Ø³Ù… */
 section.container h1 {
   font-size: 24px;
   margin-bottom: 20px;
   color: #2c3e50;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ø­Ù‚Ù„ Ø§Ù„Ø¨Ø­Ø« ÙˆÙ†ØªØ§Ø¦Ø¬ Ø§Ù„Ø¨Ø­Ø« */
 .search-box {
   width: 100%;
   max-width: 500px;
@@ -151,7 +146,6 @@ section.container h1 {
   align-items: center;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ø§Ù„Ù†ØªØ§Ø¦Ø¬ */
 .result-link {
   display: inline-block;
   padding: 10px 20px;
@@ -168,7 +162,6 @@ section.container h1 {
   transform: translateY(-2px);
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø§Ù‚ØªØ±Ø§Ø­Ø§Øª */
 .suggestions {
   position: absolute;
   top: 100%;
@@ -198,8 +191,8 @@ section.container h1 {
 }
 
 .suggestions .suggestion-item:hover {
-  background-color: var(--secondary); /* ØªØ­Ø³ÙŠÙ† Ù„ÙˆÙ† Ø§Ù„ØªÙ…Ø±ÙŠØ± */
-  color: white; /* ØªØ­Ø³ÙŠÙ† Ø§Ù„ØªØ¨Ø§ÙŠÙ† */
+  background-color: var(--secondary); 
+  color: white; 
 }
 
 .error-message {
@@ -207,7 +200,6 @@ section.container h1 {
   font-size: 1rem;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ø§Ù„ÙÙˆØªØ± */
 footer {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
@@ -218,7 +210,6 @@ footer {
   width: 100%;
 }
 
-/* Ù†Ø§ÙØ°Ø© Ø§Ù„Ù…Ù„Ø§Ø­Ø¸Ø§Øª */
 .modal {
   display: none;
   position: fixed;
@@ -275,7 +266,6 @@ footer {
   text-align: center;
 }
 
-/* ØµÙ†Ø¯ÙˆÙ‚ Ø§Ø®ØªÙŠØ§Ø± Ø§Ù„Ø¹Ù†ÙˆØ§Ù† */
 .title-select-box {
   width: 100%;
   text-align: center;
@@ -294,7 +284,6 @@ footer {
   margin-right: 5px;
 }
 
-/* Ø£ÙŠÙ‚ÙˆÙ†Ø© Ø§Ù„ØªÙˆØ¶ÙŠØ­ Ø¨Ø¬Ø§Ù†Ø¨ Ù‚Ø³Ù… Ø§Ù„ØªØ´ØºÙŠÙ„ */
 .info-icon {
   display: inline-block;
   margin-right: 4px;
@@ -320,7 +309,6 @@ footer {
   vertical-align: middle;
 }
 
-/* Ø§Ù„Ø£ÙŠÙ‚ÙˆÙ†Ø© Ø§Ù„Ø¬Ø¯ÙŠØ¯Ø© Ù„Ù†Øµ Ø§Ù„Ù…Ù‚Ø¯Ù…Ø© */
 .intro-icon {
   display: inline-block;
   margin-left: 4px;
@@ -339,7 +327,6 @@ footer {
   vertical-align: middle;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ø²Ø± Ø§Ù„Ù‚Ù„Ù… */
 .pen-btn {
   position: fixed;
   left: 30px;
@@ -365,7 +352,6 @@ footer {
   display: block;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ø²Ø± Ø§Ù„Ù‚Ù„Ù… Ø§Ù„ØµØºÙŠØ± Ø¨Ø¬Ø§Ù†Ø¨ Ù‚Ø³Ù… Ø§Ù„ØªØ´ØºÙŠÙ„ */
 .pen-btn-inline {
   background: #fff;
   border: 1.5px solid var(--secondary);
@@ -391,7 +377,6 @@ footer {
   display: block;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ø²Ø± Ø§Ù„Ù…Ù‚Ø¯Ù…Ø© Ø§Ù„Ø¬Ø¯ÙŠØ¯ */
 .intro-btn {
   background: #fff;
   border: 1.5px solid var(--secondary);
@@ -417,7 +402,6 @@ footer {
   vertical-align: middle;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ø¥Ø¶Ø§ÙÙŠ Ù„Ù…Ø­Ø§Ø°Ø§Ø© Ø§Ù„Ø£ÙŠÙ‚ÙˆÙ†Ø© ÙˆÙ†Øµ Ù‚Ø³Ù… Ø§Ù„ØªØ´ØºÙŠÙ„ */
 .icon-text-horizontal {
   width: 18px;
   height: 18px;
@@ -434,7 +418,6 @@ footer {
   margin-left: 6px;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ù…Ø¬Ù…ÙˆØ¹Ø© Ù‚Ø³Ù… Ø§Ù„ØªØ´ØºÙŠÙ„ ÙˆØ§Ù„Ø£ÙŠÙ‚ÙˆÙ†Ø§Øª Ø¨Ø´ÙƒÙ„ Ø£ÙÙ‚ÙŠ */
 .operation-horizontal-group {
   display: flex;
   flex-direction: row;
@@ -452,7 +435,6 @@ footer {
   gap: 4px;
 }
 
-/* ØªÙ†Ø³ÙŠÙ‚ Ø£Ø²Ø±Ø§Ø± Ø¥Ø¶Ø§ÙØ© Ù…ÙˆÙ‚Ø¹/Ù…Ù„Ø§Ø­Ø¸Ø© ÙˆØ²Ø± Ø§Ù„Ø¥Ø¯Ø§Ø±Ø© */
 .add-buttons-group {
   display: flex;
   flex-direction: row;
@@ -491,7 +473,6 @@ footer {
   border-color: var(--primary);
 }
 
-/* Ø§Ø³ØªØ¬Ø§Ø¨Ø© Ù„Ù„Ø´Ø§Ø´Ø§Øª Ø§Ù„ØµØºÙŠØ±Ø© */
 @media (max-width: 600px) {
   header {
     align-items: flex-end;
